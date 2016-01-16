@@ -1,6 +1,6 @@
 {
   "name": "gulp-say",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Text To Speech errors for gulp.",
   "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh)",
   "license": "MIT",
