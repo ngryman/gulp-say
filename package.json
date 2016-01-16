@@ -1,0 +1,42 @@
+{
+  "name": "gulp-say",
+  "version": "0.0.0",
+  "description": "Text To Speech errors for gulp.",
+  "author": "Nicolas Gryman <ngryman@gmail.com> (http://ngryman.sh)",
+  "license": "MIT",
+  "repository": "ngryman/gulp-say",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint *.js",
+    "spec": "nyc ava",
+    "test": "npm run lint -s && npm run spec -s",
+    "watch": "onchange *.js -- npm test"
+  },
+  "keywords": [
+    "gulp",
+    "log",
+    "logger",
+    "say",
+    "speech",
+    "tell",
+    "error",
+    "tts",
+    "text to speech"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {
+    "ava": "^0.10.0",
+    "eslint": "^1.10.3",
+    "eslint-config-ngryman": "^0.2.2",
+    "nyc": "^5.3.0",
+    "onchange": "^2.0.0"
+  }
+}
