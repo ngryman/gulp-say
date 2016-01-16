@@ -37,20 +37,22 @@ const speak = function(voice, text) {
   }
 }
 
-const say = function(err, opts) {
-  opts = opts || {}
+const say = function(opts) {
+  return function(err) {
+    opts = opts || {}
 
-  const text = opts.phrase ? opts.phrase(err) : phrase(err)
-  const speakFn = opts.speak || speak
+    const text = opts.phrase ? opts.phrase(err) : phrase(err)
+    const speakFn = opts.speak || speak
 
-  if (say.muted || opts.muted) {
-    gutil.log(text)
+    if (say.muted || opts.muted) {
+      gutil.log(text)
+    }
+    else {
+      speakFn(opts.voice, text)
+    }
+
+    return this
   }
-  else {
-    speakFn(opts.voice, text)
-  }
-
-  return this
 }
 
 module.exports = say

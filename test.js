@@ -3,11 +3,11 @@ import test from 'ava'
 import { PluginError } from 'gulp-util'
 
 const testSay = function(t, err, expect) {
-  say(err, {
+  say({
     speak: (voice, text) => {
       t.is(text, expect)
     }
-  })
+  })(err)
 }
 
 test('says the given plugin error', t => {
