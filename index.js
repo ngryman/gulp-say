@@ -18,7 +18,8 @@ const speak = function(voice, text) {
 
   if ('darwin' === process.platform) {
     if (voice) {
-      args.push(`-v ${voice}`)
+      args.push(`-v`)
+      args.push(`"${voice}"`)
     }
     args.push(text)
   }
