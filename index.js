@@ -18,10 +18,10 @@ const speak = function(voice, text) {
 
   if ('darwin' === process.platform) {
     if (voice) {
-      args.push(`-v`)
-      args.push(`"${voice}"`)
+      args.push('-v')
+      args.push(voice)
     }
-    args.push(text)
+    args.push(`"${text}"`)
   }
   else if ('linux' === process.platform) {
     args.push('--pipe')
