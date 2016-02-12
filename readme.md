@@ -17,17 +17,25 @@ engine.
 **Windows is not supported yet. Any pull request is welcomed.**
 
 
+## Install
+
+```bash
+npm install --save-dev gulp-say
+```
+
 ## Usage
 
-```
-var say = require('gulp-say');
+```javascript
+const say = require('gulp-say');
 
-gulp.task('copy', function() {
+gulp.task('copy', () => {
   return gulp.src('./assets/**')
     .on('error', say({ voice: 'Alice' }))
     .pipe(gulp.dest('dist/'));
 });
 ```
+
+## API
 
 #### `say([opts])`
 
