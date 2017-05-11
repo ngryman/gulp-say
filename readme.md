@@ -1,5 +1,7 @@
 # gulp-say [![npm][npm-image]][npm-url] [![travis][travis-image]][travis-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/gulp-say.svg)](https://greenkeeper.io/)
+
 [npm-image]: https://img.shields.io/npm/v/gulp-say.svg?style=flat
 [npm-url]: https://npmjs.org/package/gulp-say
 [travis-image]: https://img.shields.io/travis/ngryman/gulp-say.svg?style=flat
