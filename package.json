@@ -36,7 +36,7 @@
     "ava": "^0.19.0",
     "eslint": "^3.11.0",
     "eslint-config-ngryman": "^1.7.1",
-    "nyc": "^10.0.0",
+    "nyc": "^11.2.0",
     "onchange": "^3.0.2"
   }
 }
